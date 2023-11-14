@@ -13,21 +13,25 @@ interface Componente {
   styleUrls: ['./inicio.page.scss'],
 })
 export class InicioPage implements OnInit {
+tuFuncion() {
+throw new Error('Method not implemented.');
+}
 
-  componentes: Componente[] = [
+  components: Componente[] = [
     {
       icon: 'american-football-outline',
       name: 'Action Sheet',
       redirectTo: '/action-sheet'
     },
     {
-      icon: 'logo-apple-appstore',
+      icon: 'alert-circle-outline',
       name: 'Alert',
       redirectTo: '/alert'
     },
+    
 
   ];
-  constructor() { }
+  constructor() { /* TODO document why this constructor is empty */  }
 
   ngOnInit() {
   }
